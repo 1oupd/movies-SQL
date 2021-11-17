@@ -8,6 +8,12 @@ const Movie = sequelize.define("Movie", {
   },
   actor: {
     type: DataTypes.STRING,
+    allowNull: false,
+  },
+  id: {
+    type: DataTypes.INTEGER,
+    primaryKey: true,
+    autoIncrement: true,
   },
 });
 
